@@ -2,7 +2,7 @@
 
 :root{
     --base-color: #f8f5f2;      /* warm paper */
-    --text-color: #1f1f1f;      /* charcoal */
+    --text-color: #6b4f4f;      /* charcoal */
     --primary-color: #6b4f4f;   /* warm brown */
     --secondary-color: #c47f5a; /* clay accent */
     --color-1: #e7ddd4; 
@@ -161,4 +161,30 @@ ul {
     height: 400px;
     object-fit: cover;
     border-radius: .75em;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.project-card {
+    background-color: var(--color-1);
+    padding: 2em;
+    border-radius: .75em;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0.15);
+}
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+.project-card p {
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+    text-align: left;
 }
