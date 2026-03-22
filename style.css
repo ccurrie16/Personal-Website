@@ -20,7 +20,6 @@ html {
     color: var(--text-color);
 }
 body {
-    user-select: none;
     padding: 1em;
     background-color: var(--base-color);
     line-height: 1.7;
