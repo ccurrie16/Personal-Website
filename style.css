@@ -2,8 +2,8 @@
 
 :root{
     --base-color: #f8f5f2;      /* warm paper */
-    --text-color: #6b4f4f;      /* charcoal */
-    --primary-color: #6b4f4f;   /* warm brown */
+    --text-color: #4a3232;      /* charcoal */
+    --primary-color: #4a3232;   /* warm brown */
     --secondary-color: #c47f5a; /* clay accent */
     --color-1: #e7ddd4; 
     --color-2: #f1ebe6;         /* alt section */
@@ -41,6 +41,10 @@ nav ul{
 header nav li:first-child {
     font-family: Merriweather;
     font-weight: bold;
+}
+header nav li:first-child a {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
 }
 nav a {
     text-decoration: none;
@@ -135,6 +139,10 @@ section p {
     width: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 .project-card h3 {
     font-size: 1.5rem;
