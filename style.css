@@ -34,6 +34,7 @@ nav {
 nav ul{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     list-style-type: none;
     gap: 2em;
 }
@@ -126,13 +127,6 @@ section p {
     margin-top: 1em;
     font-size: 1.25rem;
 }
-ul {
-    display: flex;      
-    justify-content: space-between; 
-    list-style: none;     
-    padding: 0;         
-    margin: 0;
-}
 .header-img {
     display: flex;
     justify-content: center;
@@ -221,4 +215,41 @@ ul {
 .social-card span {
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5em;
+    }
+    header {
+        padding: 1em;
+        margin: 0.5em auto;
+    }
+    nav {
+        margin: 0.5em auto 1em auto;
+    }
+    nav ul {
+        gap: 1em;
+    }
+    nav a {
+        font-size: 0.95rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .header-img img {
+        width: 100%;
+        height: 260px;
+    }
+    .body-img {
+        width: 100%;
+        height: 260px;
+    }
+    .social-card {
+        min-width: 0;
+        width: 100%;
+    }
 }
