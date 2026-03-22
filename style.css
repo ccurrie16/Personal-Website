@@ -69,11 +69,12 @@ header {
 section {
     margin: 2em auto;
     width: min(75em, 100%);
-    background-color: var(--color-1);
-    padding: min(2em, 15%);
+    background-color: var(--color-2);
+    padding: 3em min(2em, 15%);
     border-radius: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
 }
 .flex-container {
     display: flex;
@@ -117,11 +118,6 @@ h1 {
 }
 .secondary {
     background-color: var(--secondary-color);
-}
-section{
-    padding: 3em min(2em, 15%);
-    background-color: var(--color-2);
-    text-align: center;
 }
 h2 {
     font-size: 2rem;
