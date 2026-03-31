@@ -20,4 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setTimeout(type, 400);
+
+    // Scroll-reveal
+    const revealEls = document.querySelectorAll('.project-card, #my-projects, #socials, .social-card');
+    revealEls.forEach(el => el.classList.add('reveal'));
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal--visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
 });
