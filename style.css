@@ -227,6 +227,19 @@ section p {
     font-weight: 600;
 }
 
+.typing-cursor {
+    display: inline-block;
+    font-weight: 300;
+    animation: blink 0.7s step-end infinite;
+}
+.typing-cursor--done {
+    animation: blink 1.1s step-end infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
 footer {
     text-align: center;
     padding: 2em;
