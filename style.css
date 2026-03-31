@@ -142,9 +142,9 @@ section p {
     border-radius: .75em;
 }
 .project-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
     margin-top: 2em;
 }
 .project-card {
@@ -303,6 +303,12 @@ footer {
     color: var(--text-color);
     font-size: 0.9rem;
     opacity: 0.6;
+}
+
+@media (max-width: 800px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
