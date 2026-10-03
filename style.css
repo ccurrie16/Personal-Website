@@ -87,6 +87,7 @@ header {
 section {
     margin: 2em auto;
     width: min(75em, 100%);
+    scroll-margin-top: 9rem;
     background-color: var(--color-2);
     padding: 3em min(2em, 15%);
     border-radius: 1em;
@@ -318,6 +319,9 @@ footer {
     header {
         padding: 1em;
         margin: 0.5em auto;
+    }
+    section {
+        scroll-margin-top: 6rem;
     }
     nav {
         margin: 0.5em auto 1em auto;
